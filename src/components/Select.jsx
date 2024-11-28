@@ -1,6 +1,6 @@
-export function Select({ title, options }) {
+export function Select({ title, options, className, defaultValue }) {
     return (<div className="flex space-x-2 border border-black px-4 py-2 items-center md:bg-white">
-        <select defaultValue={""} className="text-lg">
+        <select defaultValue={defaultValue || ""} className={`text-lg ${className}`}>
             <option value="" disabled hidden>{title}</option>
             {options.map((option) => (
                 <option value={option} key={option}>{option}</option>

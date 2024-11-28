@@ -1,21 +1,24 @@
+import { useState } from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import NikoLogo from "../assets/nike-logo.svg?react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useState } from "react";
 
 const ROUTES = ["Home", "About", "Services", "Pricing", "Contact"];
 
-export function Nav() {
+export function Nav({ onClickShoppingBtn }) {
     const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
     return (
         /* Logo */
-        <nav className="flex flex-wrap items-center justify-between">
+        <nav className="flex flex-wrap items-center justify-between relative">
             <a href="#">
                 <NikoLogo className="h-20 w-20" />
             </a>
 
             {/* Burger button */}
-            <button onClick={() => setIsMobileMenuShown(!isMobileMenuShown)} className="lg:hidden rounded-lg p-2 focus:ring-2 focus:ring-blue-200 hover:bg-gray-200">
+            <button
+                onClick={() => setIsMobileMenuShown(!isMobileMenuShown)}
+                className="rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 lg:hidden absolute top-5 right-0"
+            >
                 <RxHamburgerMenu size={25} />
             </button>
 
@@ -35,9 +38,11 @@ export function Nav() {
 
 
             {/* Card button */}
-            <div className="rounded-full bg-white border border-gray-400 p-2 lg:p-4 shadow-md flex-center fixed bottom-4 left-4 hover:bg-gray-100 cursor-pointer lg:static btn-press-anim">
-                <CiShoppingCart />
-            </div>
+            <button onClick={onClickShoppingBtn} className="z-10">
+                <div className="rounded-full bg-white border border-gray-400 p-2 lg:p-4 shadow-md flex-center fixed bottom-4 left-4 hover:bg-gray-100 cursor-pointer lg:static btn-press-anim">
+                    <CiShoppingCart />
+                </div>
+            </button>
 
         </nav>
     );

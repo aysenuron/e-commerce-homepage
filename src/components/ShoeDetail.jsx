@@ -8,7 +8,7 @@ export function ShoeDetail() {
 
         {/* Shoe Image */}
         <div className=" flex-1 relative">
-            <div className="bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6] p-8 md:-z-10 md:absolute -top-32 right-0 md:ml-14">
+            <div className="bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6] p-8 md:-z-10 md:absolute -top-32 -right-32 md:ml-14">
                 <img className="animate-float" src={nike1} alt="Nike Shoes" />
             </div>
         </div>
