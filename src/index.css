@@ -20,18 +20,18 @@
 
 @layer base {
     h2 {
-        @apply bg-[url('./assets/lines.png')] bg-center text-4xl lg:text-6xl font-extrabold;
+        @apply bg-[url('./assets/lines.png')] bg-center text-4xl lg:text-6xl font-extrabold dark:text-white;
     }
 
     h3 {
-        @apply text-2xl font-bold;
+        @apply text-2xl font-bold dark:text-white;
     }
 
     h4 {
-        @apply text-xl font-bold;
+        @apply text-xl font-bold dark:text-white;
     }
 
     p {
-        @apply font-medium lg:text-xl md:text-white md:bg-black md:px-3 md:py-1 lg:bg-transparent lg:p-0 lg:text-black
+        @apply dark:text-white font-medium lg:text-xl md:text-white md:bg-black md:px-3 md:py-1 lg:bg-transparent lg:p-0 lg:text-black
     }
 }

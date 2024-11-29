@@ -2,7 +2,7 @@ import { Card } from "./Card";
 
 export function NewArrivalSection({ items }) {
     return <div className="space-y-8 lg:space-y-16 mt-20 md:mt-80 xl:mt-20 lg:mt-20 2xl:mt-96 mb-20">
-        <div className="flex flex-center">
+        <div className="flex flex-center dark:text-white">
             <div>
                 <h2>NEW ARRIVALS</h2>
             </div>

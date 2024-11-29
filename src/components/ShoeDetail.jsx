@@ -8,15 +8,15 @@ export function ShoeDetail() {
 
         {/* Shoe Image */}
         <div className=" flex-1 relative">
-            <div className="bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6] p-8 md:-z-10 md:absolute -top-32 -right-32 md:ml-14">
+            <div className="bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6] p-8 dark:md:z-10 md:-z-10 md:absolute dark:md:absolute -top-32 -right-32 md:ml-14">
                 <img className="animate-float" src={nike1} alt="Nike Shoes" />
             </div>
         </div>
 
         {/* Shoe Text */}
-        <div className="flex-1 space-y-8 lg:space-y-12 flex flex-col lg:justify-center md:items-start lg:h-full">
+        <div className="dark:text-white flex-1 space-y-8 lg:space-y-12 flex flex-col lg:justify-center md:items-start lg:h-full">
             <div className="text-5xl font-black lg:text-9xl">Nike Air Max 270</div>
-            <div className="font-medium lg:text-xl md:text-white md:bg-black md:px-3 md:py-1 lg:bg-transparent lg:p-0 lg:text-black"><p>The Nike Air Max 270 is a lifestyle shoe that's sure to turn heads with its vibrant color gradient.</p></div>
+            <div className="font-medium lg:text-xl md:text-white dark:md:text-white md:bg-black dark:md:bg-night md:px-3 md:py-1 lg:bg-transparent lg:p-0 lg:text-black lg:dark:text-white"><p>The Nike Air Max 270 is a lifestyle shoe that's sure to turn heads with its vibrant color gradient.</p></div>
             <div className="flex space-x-4 items-center">
                 <div className="text-3xl lg:text-6xl font-extrabold">$100</div>
                 <Select title={"SIZE"} options={SIZES} />
@@ -25,8 +25,8 @@ export function ShoeDetail() {
 
             {/* Shoe Buttons */}
             <div className="space-x-4">
-                <button className="text-sm lg:text-lg px-8 py-3 shadow-lg bg-black text-white hover:bg-gray-900 active:bg-gray-700 btn-press-anim">Add to Card</button>
-                <a href="#" className="text-sm lg:text-lg font-bold lg:font-medium px-4 py-3 border border-black hover:bg-gray-900 hover:text-white active:bg-gray-700 active:text-white">Wiew Details</a>
+                <button className="text-sm lg:text-lg px-8 py-3 shadow-lg bg-black dark:bg-white dark:text-night-50 text-white dark:hover:bg-gray-200 hover:bg-gray-900 active:bg-gray-700 btn-press-anim">Add to Card</button>
+                <a href="#" className="text-sm lg:text-lg font-bold dark:font-medium lg:font-medium px-4 py-3 border border-black dark:border-white hover:bg-gray-900 dark:hover:bg-gray-800 hover:text-white active:bg-gray-700 active:text-white">Wiew Details</a>
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@ import { QTY } from "../constant";
 
 export function CardItem({ item: { product, qty, size } }) {
     return (<div className="w-full">
-        <div className={`hover:bg-white bg-gray-50 transform transition hover:scale-105 mb-4 p-8 space-x-8 items-center flex`}>
+        <div className={`hover:bg-white hover:dark:bg-night dark:bg-gray-800 bg-gray-50 transform transition hover:scale-105 mb-4 p-8 space-x-8 items-center flex`}>
             <img className="h-24" src={product.src} alt={product.title} />
 
             <div className="space-y-6">
@@ -37,7 +37,7 @@ export function CardItem({ item: { product, qty, size } }) {
                 </div>
             </div>
 
-            <div className="cursor-pointer absolute bottom-4 right-4 lg:bottom-6 lg:right-6">
+            <div className="cursor-pointer absolute bottom-4 right-4 lg:bottom-6 lg:right-6 dark:text-gray-200">
                 <BsFillTrash3Fill />
             </div>
 
