@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: '/e-commerce-homepage/',
+  base: "./", // Use "./" for relative paths
   build: {
     rollupOptions: {
       external: ["@fontsource-variable/nunito-sans"],
