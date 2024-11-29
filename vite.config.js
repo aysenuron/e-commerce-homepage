@@ -8,5 +8,10 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: '/e-commerce-homepage/'
-})
+  base: '/e-commerce-homepage/',
+  build: {
+    rollupOptions: {
+      external: ["@fontsource-variable/nunito-sans"],
+    }
+  },
+});
