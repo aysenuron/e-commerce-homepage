@@ -11,7 +11,7 @@ export default defineConfig({
   base: "./", // Use "./" for relative paths
   build: {
     rollupOptions: {
-      external: ["@fontsource-variable/nunito-sans"],
+      // No need to mark @fontsource-variable/nunito-sans as external
     }
   },
 });
